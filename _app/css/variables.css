@@ -1,0 +1,14 @@
+:root {
+    /* Layout */
+    --gap: 1rem;
+    --gap-section: 2rem;
+
+    /* Colors */
+    --color-background: #ffffff;
+    --color-foreground: #0f181f;
+    --color-highlight: #274156;
+}
+
+*:focus {
+    outline: 2px solid var(--color-highlight);
+}
