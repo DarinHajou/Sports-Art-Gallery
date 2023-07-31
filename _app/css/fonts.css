@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Saira+Condensed:wght@500&display=swap');
+
+:root {
+    --font-main: 'Montserrat', sans-serif;
+    --font-secondary: 'Cormorant Garamond', serif;
+    --font-tertiary: 'Oswald', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-secondary);
+}
+
+.nav__link {
+    font-family: var(--font-tertiary);
+}
