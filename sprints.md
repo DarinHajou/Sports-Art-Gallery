@@ -1,6 +1,7 @@
 Sprint 1 Goals:
 •	Create a prototype using Figma.
 •	Set up the project folder structure and development environment.
+•	Create the initial repository in GitHub.
 
 Sprint 2 Goals:
 •	Build a basic structure of the landing page with HTML.
