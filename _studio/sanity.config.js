@@ -4,12 +4,15 @@ import { visionTool } from '@sanity/vision';
 import schemas from './schemas/schemas.js';
 
 export default {
-	title: 'Studio',
+	title: 'Sports Art Gallery',
 
-	projectId: '',
-	dataset: '',
+	projectId: 'f8mgefqx',
+	dataset: 'production',
 
-	plugins: [deskTool(), visionTool()],
+	plugins: [
+	deskTool(), 
+	visionTool()
+],
 
 	schema: {
 		types: schemas,
