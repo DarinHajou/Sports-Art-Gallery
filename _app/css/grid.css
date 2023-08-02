@@ -35,4 +35,3 @@ The gap variable can be changed to adjust the space between columns. This struct
         grid-template-columns: repeat(4, 1fr);
     }
  }
-
