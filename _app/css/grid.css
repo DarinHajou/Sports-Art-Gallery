@@ -9,7 +9,6 @@ The gap variable can be changed to adjust the space between columns. This struct
     gap: var(--gap);
     width: 100%;
 }
-<<<<<<< HEAD
 
  /* 
  These media queries adapt the base 12-column grid layout to different screen sizes.
@@ -36,3 +35,4 @@ The gap variable can be changed to adjust the space between columns. This struct
         grid-template-columns: repeat(4, 1fr);
     }
  }
+
