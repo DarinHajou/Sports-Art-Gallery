@@ -52,4 +52,3 @@ The gap variable can be changed to adjust the space between columns. This struct
  .grid__column--10 { grid-column-end: span 10; }
  .grid__column--11 { grid-column-end: span 11; }
  .grid__column--12 { grid-column-end: span 12; }
- 
