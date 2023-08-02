@@ -9,3 +9,30 @@ The gap variable can be changed to adjust the space between columns. This struct
     gap: var(--gap);
     width: 100%;
 }
+
+ /* 
+ These media queries adapt the base 12-column grid layout to different screen sizes.
+ For small screens (up to 767px), the grid will have 2 columns.
+ For medium screens (from 768px to 1023px), it will have 3 columns.
+ For large screens (1024px and above), it will have 4 columns.
+ These media queries ensures that the grid adapts to the screen size, providing a responsive layout.
+ */
+
+ @media (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }
+
+ @media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+ }
+
