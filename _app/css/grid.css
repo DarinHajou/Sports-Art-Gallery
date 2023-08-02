@@ -1,0 +1,11 @@
+/* 
+This is the basic grid layout for the site. It divides the content into 12 equal columns. 
+The gap variable can be changed to adjust the space between columns. This structure helps with the design consistency across different parts of the site 
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gap);
+    width: 100%;
+}
