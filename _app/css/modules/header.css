@@ -1,0 +1,13 @@
+/* 
+  Using Flexbox for the header for easier alignment and distribution of elements.
+*/
+
+.header {
+	position: relative;
+	background: #fff;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Oswald', sans-serif;
+}
