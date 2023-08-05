@@ -25,3 +25,29 @@
 	max-width: 200px;
 	height: auto;
 }
+
+/* Mobile-first CSS for the search bar */
+.header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em;
+    margin-right: 1em;
+}
+
+.header__search input[type="search"] {
+    width: 100%; /* Full width of its parent .header__search */
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1em;
+}
+
+.header__search input[type="search"]:focus,
+.header__search input[type="search"]:hover {
+	border-color: #909090;
+}
+
+.search-icon {
+   padding: 0.5em;
+}
