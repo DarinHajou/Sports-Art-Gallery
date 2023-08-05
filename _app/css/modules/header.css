@@ -1,13 +1,27 @@
 /* 
-  Using Flexbox for the header for easier alignment and distribution of elements.
+  The styles in this file are based on several resources:
+  1. Flexbox properties and principles learned from MDN Web Docs: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+  2. Conversations and guidance from OpenAI's ChatGPT for responsive design and best practices.
+  
+  Flexbox was utilized to the header for easier alignment and distribution of elements.
 */
-
 .header {
 	position: relative;
 	background: #fff;
 	padding: 1rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	font-family: 'Oswald', sans-serif;
+}
+
+.header__logo {
+	text-align: start;
+}	
+
+.header__logo img {
+	width: 20vw; /* Logo width is responsive to the viewport width*/
+	min-width: 100px;
+	max-width: 200px;
+	height: auto;
 }
