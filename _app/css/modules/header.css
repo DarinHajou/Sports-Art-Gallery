@@ -20,7 +20,7 @@
 }	
 
 .header__logo img {
-	width: 20vw; /* Logo width is responsive to the viewport width*/
+	width: 20vw; /* Logo width is responsive to the viewport width */
 	min-width: 100px;
 	max-width: 200px;
 	height: auto;
@@ -51,3 +51,29 @@
 .search-icon {
    padding: 0.5em;
 }
+
+/*
+  The visually-hidden class is used to hide elements visually while keeping them accessible to assistive technologies.
+
+  Accessibility concerns:
+  - The off-screen content remains in the DOM and the accessibility tree, improving page performance without negatively impacting accessibility.
+  - Elements hidden with this class will still appear in the accessibility tree. If you don't want an element to appear in the accessibility tree, use aria-hidden="true".
+
+  References:
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility
+
+  Source:
+  - MDN Web Docs
+ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px; /* The width and height makes the elements very smalls o it not visible on the screen. */
+    height: 1px;
+    padding: 0; /* The adding and margin ensures that the element does't take up any additional space. */
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0); /* This property is used for compatibility with older browsers. */
+    border: 0;
+  }
+  
