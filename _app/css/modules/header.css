@@ -76,4 +76,63 @@
     clip: rect(0,0,0,0); /* This property is used for compatibility with older browsers. */
     border: 0;
   }
-  
+
+ .header__nav {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	/* display: none; */
+	background: #fff;
+	padding: 1rem;
+	z-index: 10;
+	text-decoration: underline;
+}
+
+.header__nav--active {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+ }
+
+ ul {
+	font-weight: 500;
+}
+
+.header__nav .nav__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header__nav .nav__item {
+	text-align: center;
+	padding: var(--gap);
+}
+
+.header__nav .nav__link {	
+	text-decoration: none;
+	color: #000;
+}
+
+.header__nav .nav__link:hover {
+	text-decoration: none;
+}
+
+/* Styles for larger screens */
+@media (min-width: 1400px) {
+	.header__nav {
+		position: static; /* It will follow the normal document flow */
+		width: auto;  /* The nav will take up only as much width as needed */
+		margin-right: 1%;
+		border: none;
+	}
+
+	.header__menu-button {
+		display: none;
+	}
+
+	.header__nav .nav__list {
+		display: flex; /* List items will be in a row */
+		gap: var(--gap);
+	}
+}
