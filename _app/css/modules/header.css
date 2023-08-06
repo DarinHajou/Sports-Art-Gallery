@@ -68,9 +68,9 @@
 
 .visually-hidden {
     position: absolute;
-    width: 1px; /* The width and height makes the elements very smalls o it not visible on the screen. */
+    width: 1px; /* The width and height makes the elements very smalls so it's not visible on the screen. */
     height: 1px;
-    padding: 0; /* The adding and margin ensures that the element does't take up any additional space. */
+    padding: 0; /* The padding and margin ensures that the element does't take up any additional space. */
     margin: -1px;
     overflow: hidden;
     clip: rect(0,0,0,0); /* This property is used for compatibility with older browsers. */
