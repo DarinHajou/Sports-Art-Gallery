@@ -1,5 +1,5 @@
 /* 
-  The .banner class is used for the main banner area, which includes the image, title,     caption, and button.
+  The .banner class is used for the main banner area, which includes the image, title, caption, and button.
 
   References:
   - https://css-tricks.com/aspect-ratio-boxes/
@@ -11,4 +11,29 @@
 	height: auto;
 	overflow: hidden;
 	padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
+}
+
+/* 
+  The .banner__slide class styles each individual slide within the banner. Slides are positioned 
+  on top of each other using absolute positioning, and are by default fully transparent (opacity: 0), 
+  occupying the full size of the parent .banner element. 
+*/
+
+.banner__slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s; /* This property is used to add a smooth fading effect when slides become active. */
+	top: 0;
+	left: 0;
+}
+
+/*
+  The .banner__slide.active class is used to indicate the currently visible slide. The opacity 
+  property is overridden to make the active slide fully opaque.
+*/
+
+.banner__slide.active {
+	opacity: 1;
 }
