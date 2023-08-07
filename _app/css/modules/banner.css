@@ -1,0 +1,14 @@
+/* 
+  The .banner class is used for the main banner area, which includes the image, title,     caption, and button.
+
+  References:
+  - https://css-tricks.com/aspect-ratio-boxes/
+*/
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
+}
