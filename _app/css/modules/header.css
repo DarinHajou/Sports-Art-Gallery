@@ -77,11 +77,11 @@
     border: 0;
   }
 
- .header__nav {
+.header__nav {
 	position: absolute;
 	top: 100%;
 	right: 0;
-	/* display: none; */
+	display: none;
 	background: #fff;
 	padding: 1rem;
 	z-index: 10;
@@ -94,7 +94,7 @@
 	cursor: pointer;
  }
 
- ul {
+ul {
 	font-weight: 500;
 }
 
@@ -107,6 +107,7 @@
 .header__nav .nav__item {
 	text-align: center;
 	padding: var(--gap);
+	background-color: #f2f2f2;
 }
 
 .header__nav .nav__link {	
@@ -124,7 +125,7 @@
 		position: static; /* It will follow the normal document flow */
 		width: auto;  /* The nav will take up only as much width as needed */
 		margin-right: 1%;
-		border: none;
+        display: flex; /* This overrides the display: none; with display: flex; so that the navigation will always be displayed at larger screens. */
 	}
 
 	.header__menu-button {
@@ -134,5 +135,9 @@
 	.header__nav .nav__list {
 		display: flex; /* List items will be in a row */
 		gap: var(--gap);
+	}
+
+	.header__nav .nav__item {
+		background-color: var(--color-background);
 	}
 }
