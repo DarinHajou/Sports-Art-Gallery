@@ -68,6 +68,33 @@
 	-webkit-text-fill-color: transparent;
 }
 
+/* 
+  .banner__slide::before is a pseudo-element that acts as an overlay on each slide.
+  This darkens the slide's image slightly to improve the readability of any text or content on top of the image.  
+*/
+.banner__slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3); 
+}
+
+/* 
+  Ensures the slide's image covers the entire area and sits behind other slide content.
+*/
+.banner__slide img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
 @media only screen and (min-width: 480px) {
     .banner__caption {
        font-size: calc(2rem + 0.9vw);
