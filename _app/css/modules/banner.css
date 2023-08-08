@@ -4,7 +4,6 @@
   References:
   - https://css-tricks.com/aspect-ratio-boxes/
 */
-
 .banner {
 	position: relative;
 	width: 100%;
@@ -18,7 +17,6 @@
   on top of each other using absolute positioning, and are by default fully transparent (opacity: 0), 
   occupying the full size of the parent .banner element. 
 */
-
 .banner__slide {
 	position: absolute;
 	width: 100%;
@@ -33,7 +31,25 @@
   The .banner__slide.active class is used to indicate the currently visible slide. The opacity 
   property is overridden to make the active slide fully opaque.
 */
-
 .banner__slide.active {
 	opacity: 1;
+}
+
+/* 
+  .banner__title font size declaration calc(1.5rem + 2vw) is a combination of fixed and responsive units, creating a dynamic font size that adjusts based on the viewport width.
+
+  Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+*/
+.banner__title {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: calc(1.5rem + 2vw);
+	text-align: center;
+	color: var(--color-background);
+	background: linear-gradient(white, rgba(255,255,255,0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
