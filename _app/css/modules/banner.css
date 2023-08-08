@@ -53,3 +53,35 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.banner__caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: calc(0.5rem + 1vw);
+	color: var(--color-background);
+	text-align: center;
+	background: linear-gradient(white 50%, rgba(255,255,255,0) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 480px) {
+    .banner__caption {
+       font-size: calc(2rem + 0.9vw);
+       top: 45%;
+    }
+
+    .banner__title {
+        font-size: calc(3rem + 1.2vw);
+    }
+ }
+
+ @media only screen and (min-width: 480px) and (max-width: 1010px) {
+    .banner__caption {
+        top: 55%;
+        font-size: calc(1rem + 1.2vw);
+    }
+}
