@@ -8,7 +8,8 @@ export default {
 			  title: 'Title',
 			  type: 'string',
 			  description: 'The name of the sport.',
-			  validation: Rule => Rule.required().unique().error('The sport title must be unique.')
+              validation: Rule => Rule.required().error('The sport title is required.')
+
 		 },
 		 {
 			  name: 'slug',
