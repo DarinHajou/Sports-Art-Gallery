@@ -45,7 +45,7 @@
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: 'Saira Condensed', sans-serif;
+	font-family: var(--font-banner);
 	font-size: calc(1.5rem + 2vw);
 	text-align: center;
 	color: var(--color-background);
@@ -59,7 +59,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: 'Saira Condensed', sans-serif;
+	font-family: var(--font-banner);
 	font-size: calc(0.5rem + 1vw);
 	color: var(--color-background);
 	text-align: center;

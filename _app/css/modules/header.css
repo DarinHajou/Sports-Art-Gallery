@@ -12,7 +12,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-family: 'Oswald', sans-serif;
+	font-family: var(--font-tertiary);
 }
 
 .header__logo {
@@ -65,7 +65,6 @@
   Source:
   - MDN Web Docs
  */
-
 .visually-hidden {
     position: absolute;
     width: 1px; /* The width and height makes the elements very smalls so it's not visible on the screen. */
