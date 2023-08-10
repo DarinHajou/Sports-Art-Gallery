@@ -1,3 +1,4 @@
 import sportCategory from './documents/sportCategory.js'
+import transformedImages from './documents/transformedImages.js';
 
-export default [sportCategory];
+export default [sportCategory, transformedImages];
