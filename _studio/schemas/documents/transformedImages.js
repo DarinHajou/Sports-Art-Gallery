@@ -31,11 +31,25 @@ export default {
 		validation: rule=> rule.required()
 	},
 	{
-		name: 'sport',
-		title: 'Sport',
+		name: 'athlete',
+		title: 'Athlete',
+		type: 'reference',
+		to: [{ type: 'athlete' }],
+		description: 'Athlete associated with the transformation image',
+	},
+	{
+		name: 'sportCategory',
+		title: 'Sport Category',
 		type: 'reference',
 		to: [{ type: 'sportCategory' }],
 		description: 'Sport associated with the transformation image',
+	},
+	{
+		name: 'imageStyle',
+		title: 'Image Style',
+		type: 'reference',
+		to: [{ type: 'imageStyle' }],
+		description: 'Image style associated with the transformation image',
 	},
   ],
 };
