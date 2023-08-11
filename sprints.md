@@ -51,6 +51,63 @@ I faced quite a few challenges with the Figma design during this sprint. Since I
 • Despite the challenges I faced with Figma, they've only motivated me to improve. I know I have some growing to do in this area, and I'm committed to working on it for the future sprints.
 
 
+Sprint 2 Goals Response:
 
+1. Introduction
+Sprint 2 was all about moving from designs in Figma to actually setting up the website's foundational structure. This sprint primarily focused on the establishment of the HTML structure for the landing page, along with the basic styling and interactivity elements.
 
+2. Work Completed
 
+• Established the HTML structure for the landing page, paying particular attention to the header and banner sections.
+
+• Integrated the environment setup with defined CSS variables, ensuring consistency for fonts, spaces, and colors across the website.
+
+• Initialized the npm environment, laying the groundwork for future development and facilitating smoother integration of various tools and  libraries.
+
+• Accomplished mobile-first styling for the header and banner, followed by media queries for larger screen adaptations.
+
+• Injected interactivity into the header and banner using JavaScript, enhancing the user experience.
+
+3. Challenges Faced
+
+• Branching Strategy: I had trouble figuring out the best way to work on the header. It was hard deciding on the detail level for my tasks and commits made me understand that I've got more to learn about workflows. Thankfully, I settled on a method that feels right.
+
+• Design Decisions: Initially, I dived in using a layout grid. However, after some reflection, I switched to flex because it felt more manageable for my design.
+
+• Merging: I began merging without squashing commits. Instead of backtracking, I kept it consistent and continued with this approach. I'll be keeping an eye on this in my future projects.
+
+• Figma Issues: The bulk of my struggles were with Figma. My prototype didn't have all the details I wanted. This was a result of not giving Figma the attention it deserved earlier in the semester, particularly during side projects.
+
+4. Lessons Learned
+
+• Workflow Decisions: While deciding on my branching strategy, I realized that defining a workflow isn't just about following best practices. It's also about understanding the granularity of my work and striking a balance. It's essential to ensure that the workflow aligns with the project's needs and my personal comfort level.
+
+• Design Decisions: Shifting from the layout grid to flex was a testament to the fact that sometimes, initial design decisions might need to be revisited. Even though the grid offers a structured layout, the flexibility of flexbox seemed more apt for my project. This taught me the importance of being adaptable in my design decisions.
+
+• Merging Strategies: I overlooked squashing commits before merging, as instructed by our teacher. This oversight was a reminder: while being consistent is key, it's also vital to be aware of version control tools and strategies. I've tuned into these details more, hoping for smoother sailings in future projects.
+
+• Prototyping and its Challenges: The issues I faced with Figma were a wake-up call. It emphasized the importance of having a robust blueprint before diving into coding. While I tried to bridge the gaps between my Figma prototype and the actual website, it was clear that having a well-structured prototype could save time and reduce uncertainties during development.
+
+Retrospective
+
+1. What went well?
+
+• Somewhat successful transition from Figma prototype to actual coding.
+• Successful setup of npm environment.
+• Application of mobile-first design and the inclusion of interactivity using JavaScript.
+• Overcame challenges in workflow decisions and adapted design choices as necessary.
+
+2. What could be improved?
+
+• More focus on prototyping in Figma to reduce uncertainties in actual development.
+• Better understanding and application of Git strategies, such as squash and merge.
+• More attention to planning to ensure smoother project progression.
+
+3. What will I commit to improve in the next sprint?
+
+• Allocate more time for learning and mastering tools like Figma.
+• Continue learning Git strategies and workflows for better version control.
+• Prioritize simplicity in design and coding to maintain clarity and efficiency.
+
+Final note:
+My project was pretty ambitious, but I tried to keep both the design and code straightforward. This whole experience taught me that when planning a project, sometimes simplicity can be more impactful than going too complex.
