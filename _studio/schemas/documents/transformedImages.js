@@ -1,6 +1,6 @@
 export default {
-	name: 'transformationImages',
-	title: 'Transformation Images',
+	name: 'transformedImages',
+	title: 'Transformed Images',
 	type: 'document',
 	fields: [
 	{
@@ -30,13 +30,13 @@ export default {
 		description: 'Image of the transformation',
 		validation: rule=> rule.required()
 	},
-	{
-		name: 'athlete',
-		title: 'Athlete',
-		type: 'reference',
-		to: [{ type: 'athlete' }],
-		description: 'Athlete associated with the transformation image',
-	},
+	// {
+	// 	name: 'athlete',
+	// 	title: 'Athlete',
+	// 	type: 'reference',
+	// 	to: [{ type: 'athlete' }],
+	// 	description: 'Athlete associated with the transformation image',
+	// },
 	{
 		name: 'sportCategory',
 		title: 'Sport Category',
