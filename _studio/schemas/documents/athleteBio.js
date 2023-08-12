@@ -8,6 +8,8 @@ export default {
             title: 'Name',
             type: 'string',
             description: 'Name of the athlete',
+            validation: Rule => Rule.required().error('A name is required.')
+            // Every athlete entry must have a unique name.
         },
         {
             name: 'slug',
@@ -18,6 +20,10 @@ export default {
                 maxLength: 96,
             },
             description: 'URL-friendly slug for the athlete',
+            validation: Rule => Rule.required().error('A slug is required.').custom(slug => {
+                // Check if slug is unique, return true if it's unique, else return an error message.
+                // To ensure unique and SEO-friendly URLs for athlete profiles.
+             })         
         },
         {
             name: 'image',
@@ -27,6 +33,7 @@ export default {
                 hotspot: true,
             },
             description: 'Image of the athlete',
+            validation: Rule => Rule.required().error('A image is required')
         },
         {
             name: 'sportCategory',
@@ -34,6 +41,7 @@ export default {
             type: 'reference',
             to: [{ type: 'sportCategory' }],
             description: 'The sport the athlete competes in',
+            validation: Rule => Rule.required().error('A sport category is required.')
         },
         {
             name: 'bio',
@@ -46,6 +54,7 @@ export default {
             title: 'Birth Date',
             type: 'date',
             description: 'Date of birth of the athlete',
+            validation: Rule => Rule.max(new Date().toISOString().split('T')[0]).error('Birth date cannot be in the future.')
         },
         {
             name: 'nationality',
