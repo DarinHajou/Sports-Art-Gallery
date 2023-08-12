@@ -32,6 +32,7 @@ export default {
         type: 'reference',
         to: [{ type: 'transformedImages' }],
         description: 'Transformed image associated with the image style',
+        validation: rule => rule.required()
      },
   ],
 };

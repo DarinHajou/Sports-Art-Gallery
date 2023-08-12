@@ -30,13 +30,13 @@ export default {
 		description: 'Image of the transformation',
 		validation: rule=> rule.required()
 	},
-	// {
-	// 	name: 'athlete',
-	// 	title: 'Athlete',
-	// 	type: 'reference',
-	// 	to: [{ type: 'athlete' }],
-	// 	description: 'Athlete associated with the transformation image',
-	// },
+	{
+		name: 'athleteBio',
+		title: 'Athlete Bio',
+		type: 'reference',
+		to: [{ type: 'athleteBio' }],
+		description: 'Athlete associated with the transformation image',
+	},
 	{
 		name: 'sportCategory',
 		title: 'Sport Category',
