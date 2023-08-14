@@ -1,0 +1,64 @@
+.container {
+	padding-bottom: 50px;
+ }
+ 
+.grid {
+	grid-template-columns: repeat(12, 1fr); 
+	gap: var(--gap);
+	grid-row-gap: 15px;
+ }
+ 
+ .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem; 
+	border: 1px solid #ccc; 
+ }
+ 
+ .card__image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 0.5rem; 
+ }
+ 
+ .card__title {
+    margin-bottom: 0.25rem;
+	font-size: 0.9rem;
+	font-weight:500;
+ }
+ 
+ .card__description {
+	font-size: 0.875rem;
+ }
+
+ .card__title, .card__description {
+    line-height: 1.9;
+}
+
+/* Mobile view (by default) - 1 column layout */
+.grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Small screens: 2 columns */
+@media (min-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium screens: 3 columns */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large screens: 4 columns */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
