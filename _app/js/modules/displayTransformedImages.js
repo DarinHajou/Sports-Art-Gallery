@@ -48,7 +48,7 @@ export default async function displayTransformedImages() {
    */
   function createTransformedImageCard(image) {
     const card = document.createElement('div');
-    card.classList.add('card', 'grid__column--3');
+    card.classList.add('card');
 
     const imageLink = document.createElement('a');
 
