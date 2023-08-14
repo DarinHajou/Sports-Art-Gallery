@@ -70,9 +70,12 @@ export default async function displayTransformedImages() {
     const descriptionElement = document.createElement('p');
     descriptionElement.classList.add('card__description');
     cardContent.appendChild(descriptionElement);
-
+        
+    const description = image.imageStyle?.description || 'No description available';
+    descriptionElement.textContent = description;    
+    
     card.appendChild(cardContent);
-
+    
     return card;
   }
 };
