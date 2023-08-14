@@ -16,7 +16,7 @@ import { sanity } from "../sanity.js";
  * @see {@link https://www.sanity.io/docs/groq-syntax | Sanity GROQ Syntax Documentation}
  * @see {@link https://www.sanity.io/docs/http-query | Sanity HTTP Query Documentation}
  */
-export default async function FetchTransformedImages() {
+export default async function fetchTransformedImages() {
   // Define the GROQ query to fetch transformed images with their associated data.
   // The query fetches primary details of the transformed images and also dereferences 
   // associated 'athleteBio' to fetch the name and _id.
