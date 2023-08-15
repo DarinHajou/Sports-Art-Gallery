@@ -29,6 +29,7 @@ export default async function fetchTransformedImages() {
         url
       }
     },
+    imageStyle->{_id, description},
     athleteBio->{
       _id,
       name
