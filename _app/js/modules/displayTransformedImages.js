@@ -77,7 +77,7 @@ export default async function displayTransformedImages() {
 
         card.appendChild(cardContent);
 
-        const modal = createModal(description);
+        const modal = createModal(description, image.athleteBio?._id);
         card.appendChild(modal);
 
         // Add event listener to show modal on hover
