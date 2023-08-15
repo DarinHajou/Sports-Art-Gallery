@@ -1,4 +1,3 @@
-
 import fetchTransformedImages from "./fetchTransformedImages.js";
 import createModal from "./modal.js";
 
@@ -90,10 +89,6 @@ export default async function displayTransformedImages() {
         card.addEventListener('mouseleave', () => {
             modal.classList.remove('show');
         });
-
-        cardContent.appendChild(titleElement);
-        cardContent.appendChild(descriptionElement);
-        card.appendChild(cardContent);
 
         return card;
     }

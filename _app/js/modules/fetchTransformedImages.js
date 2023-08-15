@@ -17,33 +17,33 @@ import { sanity } from "../sanity.js";
  * @see {@link https://www.sanity.io/docs/http-query | Sanity HTTP Query Documentation}
  */
 export default async function fetchTransformedImages() {
-  // Define the GROQ query to fetch transformed images with their associated data.
-  // The query fetches primary details of the transformed images and also dereferences 
-  // associated 'athleteBio' to fetch the name and _id.
-  const query = `*[_type == 'transformedImages']{
-    _id,
-    name,
-    slug,
-    image {
-      asset->{
-        url
-      }
-    },
-    imageStyle->{_id, description},
-    athleteBio->{
-      _id,
-      name
-    }
-  }`;
+    // Define the GROQ query to fetch transformed images with their associated data.
+    // The query fetches primary details of the transformed images and also dereferences 
+    // associated 'athleteBio' to fetch the name and _id.
+    const query = `*[_type == 'transformedImages']{
+        _id,
+        name,
+        slug,
+        image {
+            asset->{
+                url
+            }
+        },
+        imageStyle->{_id, description},
+        athleteBio->{
+            _id,
+            name
+        }
+    }`;
 
-  try {
-    // Use the sanity client to fetch data based on the GROQ query.
-    const data = await sanity.fetch(query, { expandRefs: true });
-    console.log("Fetched data:", data);
-    
-    return data;  // Return the fetched data
-  } catch (error) {
-    console.error("Error fetching data:", error);  // Log any errors
-    throw error;  // Propagate the error to the caller
-  }
+    try {
+        // Use the sanity client to fetch data based on the GROQ query.
+        const data = await sanity.fetch(query, { expandRefs: true });
+        console.log("Fetched data:", data);
+        
+        return data;  // Return the fetched data
+    } catch (error) {
+        console.error("Error fetching data:", error);  // Log any errors
+        throw error;  // Propagate the error to the caller
+    }
 }
