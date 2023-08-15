@@ -102,6 +102,22 @@
 		</div>
 		
 		<div id="transformedImagesContainer" class="grid"></div>
+		
+		<!-- 
+		NOTE: The current modal setup, which displays information on hover, might not be optimal for 
+		touch-screen devices and can pose accessibility challenges for users on different devices. 
+		For future iterations, it's recommended to explore a different approach that enhances the overall user 
+		experience and accessibility across both touch and non-touch devices, aligning more closely with best practices.
+		-->
+
+		<!-- Modal container with ARIA attributes for accessibility -->
+		<div id="modal-1" class="modal" role="dialog" aria-labelledby="modalTitle-1" aria-hidden="true">
+			<div class="modal-content">
+				<!-- Modal title for accessibility (even if visually hidden) -->
+				<h2 id="modalTitle-1" class="visually-hidden">Modal Title</h2>
+				<!-- Content for the modal goes here -->
+			</div>
+		</div>
 
 	</body>
 </html>
