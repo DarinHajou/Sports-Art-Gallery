@@ -9,24 +9,29 @@
 // by Kevin Powell and assistance from ChatGPT by OpenAI.
 // URL: https://www.youtube.com/watch?v=TAB_v6yBXIE
 
-export default function createModal(description) {
-	const modal = document.createElement('div');
-	modal.classList.add('modal');
+export default function createModal(description, athleteId) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
 
-	const modalContent = document.createElement('div');
-	modalContent.classList.add('modal-content');
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
 
-	const descriptionLink = document.createElement('a');
-	descriptionLink.target = '_blank'; // Open the link in a new tab/window
-	descriptionLink.style.textDecoration = 'none'; // Remove link decoration
+    const descriptionLink = document.createElement('a');
+    if (athleteId) {  // Check if athleteId exists before setting the href  ***here the change
+        descriptionLink.href = `./athlete-bio-page/index.html?id=${athleteId}`;
+    } else {
+        descriptionLink.href = '#';  // Set a fallback href if no athleteId
+    }
+    descriptionLink.target = '_blank';
+    descriptionLink.style.textDecoration = 'none';
 
-	const descriptionText = document.createElement('p');
-	descriptionText.textContent = description || 'Image description or additional information';
+    const descriptionText = document.createElement('p');
+    descriptionText.textContent = description || 'Image description or additional information';
 
-	descriptionLink.appendChild(descriptionText);
-	modalContent.appendChild(descriptionLink);
+    descriptionLink.appendChild(descriptionText);
+    modalContent.appendChild(descriptionLink);
 
-	modal.appendChild(modalContent);
+    modal.appendChild(modalContent);
 
-	return modal;
+    return modal;
 }
