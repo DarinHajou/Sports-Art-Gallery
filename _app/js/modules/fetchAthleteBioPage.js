@@ -70,7 +70,8 @@ function displayAthleteDetails(athleteData) {
     const athleteBio = athleteContainer.querySelector('.athlete__bio');
     const athleteSportCategory = athleteContainer.querySelector('.athlete__sport-category');
     const athleteBirthDate = athleteContainer.querySelector('.athlete__birth-date');
-    
+    const athleteNationality = athleteContainer.querySelector('.athlete__nationality');
+
     // Update the content.
     athleteName.textContent = athleteData.name;
 
@@ -85,8 +86,35 @@ function displayAthleteDetails(athleteData) {
     }
 
     athleteBirthDate.textContent = athleteData.birthDate;
+    athleteNationality.textContent = athleteData.nationality;
 
-    // Note to self... update other elements like nationality, careerTitles, etc.
+    // Display athlete's career titles
+    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles');
+    athleteCareerTitles.textContent = athleteData.careerTitles;
+
+    // Display athlete's position or role
+    const athletePositionRole = athleteContainer.querySelector('.athlete__position-role');
+    athletePositionRole.textContent = athleteData.positionOrRole;
+
+    // Display athlete's stats dynamically
+    const athleteStats = athleteContainer.querySelector('.athlete__stats');
+    athleteStats.innerHTML = ''; // Clear any existing items
+    athleteData.stats.forEach(stat => {
+        const statItem = document.createElement('p');
+        statItem.classList.add('athlete__stats-item');
+        statItem.textContent = `${stat.statName}: ${stat.statValue}`;
+        athleteStats.appendChild(statItem);
+    });
+
+    // Display athlete's career timeline dynamically
+    const athleteTimeline = athleteContainer.querySelector('.athlete__timeline');
+    athleteTimeline.innerHTML = ''; // Clear any existing items
+    athleteData.careerTimeline.forEach(eventItem => {
+        const timelineItem = document.createElement('p');
+        timelineItem.classList.add('athlete__timeline-item');
+        timelineItem.textContent = `${eventItem.date}: ${eventItem.event}`;
+        athleteTimeline.appendChild(timelineItem);
+    });
 }
 
 export function loadAndDisplayAthleteBioPage(athleteId) {
