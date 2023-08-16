@@ -10,4 +10,4 @@ startBannerSlide();
 fetchTransformedImages();
 DisplayTransformedImages();
 createModal();
-fetchAthleteBioPage
+fetchAthleteBioPage();

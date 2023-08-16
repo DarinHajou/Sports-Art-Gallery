@@ -59,3 +59,52 @@ export default async function fetchAthleteBioPage(athleteId) {
         throw error;
     }
 }
+
+function displayAthleteDetails(athleteData) {
+    // Get the main athlete container
+    const athleteContainer = document.querySelector('.athlete');
+
+    // Get the necessary DOM elements within the athlete container
+    const athleteName = athleteContainer.querySelector('.athlete__name');
+    const athleteImage = athleteContainer.querySelector('.athlete__image');
+    const athleteBio = athleteContainer.querySelector('.athlete__bio');
+    const athleteSportCategory = athleteContainer.querySelector('.athlete__sport-category');
+    const athleteBirthDate = athleteContainer.querySelector('.athlete__birth-date');
+    
+    // Update the content.
+    athleteName.textContent = athleteData.name;
+
+    if (athleteData.image && athleteData.image.asset) {
+        athleteImage.src = athleteData.image.asset.url;
+    }
+
+    athleteBio.textContent = athleteData.bio;
+
+    if (athleteData.sportCategory) {
+        athleteSportCategory.textContent = athleteData.sportCategory.title;
+    }
+
+    athleteBirthDate.textContent = athleteData.birthDate;
+
+    // Note to self... update other elements like nationality, careerTitles, etc.
+}
+
+export function loadAndDisplayAthleteBioPage(athleteId) {
+    fetchAthleteBioPage(athleteId)
+        .then(athleteData => {
+            displayAthleteDetails(athleteData);
+        })
+        .catch(error => {
+            console.error("Error fetching and displaying athlete bio:", error);
+        });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Extract the athlete ID from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const athleteId = urlParams.get('id');
+
+    if (athleteId) {
+        loadAndDisplayAthleteBioPage(athleteId);
+    }
+});
