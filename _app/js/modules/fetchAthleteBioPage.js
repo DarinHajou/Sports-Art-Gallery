@@ -67,10 +67,10 @@ function displayAthleteDetails(athleteData) {
     // Get the necessary DOM elements within the athlete container
     const athleteName = athleteContainer.querySelector('.athlete__name');
     const athleteImage = athleteContainer.querySelector('.athlete__image');
-    const athleteBio = athleteContainer.querySelector('.athlete__bio');
-    const athleteSportCategory = athleteContainer.querySelector('.athlete__sport-category');
-    const athleteBirthDate = athleteContainer.querySelector('.athlete__birth-date');
-    const athleteNationality = athleteContainer.querySelector('.athlete__nationality');
+    const athleteBio = athleteContainer.querySelector('.athlete__bio [data-content]');
+    const athleteSportCategory = athleteContainer.querySelector('.athlete__sport-category [data-content]');
+    const athleteBirthDate = athleteContainer.querySelector('.athlete__birth-date [data-content]');
+    const athleteNationality = athleteContainer.querySelector('.athlete__nationality [data-content]');
 
     // Update the content.
     athleteName.textContent = athleteData.name;
@@ -89,7 +89,7 @@ function displayAthleteDetails(athleteData) {
     athleteNationality.textContent = athleteData.nationality;
 
     // Display athlete's career titles
-    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles');
+    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles [data-content');
     athleteCareerTitles.textContent = athleteData.careerTitles;
 
     // Display athlete's position or role
@@ -105,6 +105,7 @@ function displayAthleteDetails(athleteData) {
         statItem.textContent = `${stat.statName}: ${stat.statValue}`;
         athleteStats.appendChild(statItem);
     });
+    console.log('athleteContainer:', athleteContainer);
 
     // Display athlete's career timeline dynamically
     const athleteTimeline = athleteContainer.querySelector('.athlete__timeline');

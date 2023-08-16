@@ -20,10 +20,6 @@ export default {
                 maxLength: 96,
             },
             description: 'URL-friendly slug for the athlete',
-            validation: Rule => Rule.required().error('A slug is required.').custom(slug => {
-                // Check if slug is unique, return true if it's unique, else return an error message.
-                // To ensure unique and SEO-friendly URLs for athlete profiles.
-             })         
         },
         {
             name: 'image',

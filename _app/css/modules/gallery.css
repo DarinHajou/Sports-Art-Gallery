@@ -8,15 +8,18 @@
 	grid-row-gap: 15px;
  }
  
- .card {
+  .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	padding: 1rem; 
 	border: 1px solid #ccc; 
+	font-family: var(--font-main);
+	background-color: var(--color-foreground);
+	color: var(--color-background);
  }
- 
+
  .card__image {
 	width: 100%;
 	height: auto;

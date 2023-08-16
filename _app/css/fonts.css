@@ -6,7 +6,7 @@
     --font-main: 'Montserrat', sans-serif;
     --font-secondary: 'Cormorant Garamond', serif;
     --font-tertiary: 'Oswald', sans-serif;
-     --font-banner: 'Saira Condensed', sans-serif;
+    --font-banner: 'Saira Condensed', sans-serif;
 }
 
 body {
@@ -22,5 +22,5 @@ h1, h2, h3 {
 }
 
 .banner__title, .banner__caption {
-    font-family: var(--font-banner); /* Updated this line */
+    font-family: var(--font-banner);
 }

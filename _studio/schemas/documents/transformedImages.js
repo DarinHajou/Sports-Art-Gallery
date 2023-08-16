@@ -20,10 +20,6 @@ export default {
                 maxLength: 200,
             },
             description: 'URL-friendly version of the name',
-            validation: Rule => Rule.required().error('A slug for the transformation image is required.').custom(slug => {
-                // Check if slug is unique, return true if it's unique, else return an error message.
-                // To ensure unique and SEO-friendly URLs for transformed images.
-             }) 
         },
         {
             name: 'image',

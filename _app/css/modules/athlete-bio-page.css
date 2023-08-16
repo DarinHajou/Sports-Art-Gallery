@@ -1,0 +1,105 @@
+.athlete-bio-page {
+    font-family: var(--font-secondary);
+    background-color: var(--color-foreground);
+    /* color: var(--color-background); */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main {
+    padding: var(--gap-section);
+    max-width: 800px;
+    width: 100%;
+    background-color: var(--color-background);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.athlete {
+    padding: var(--gap);
+}
+
+.athlete__name {
+    font-size: 2rem;
+    margin-bottom: var(--gap);
+    color: var(--color-highlight);
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+.athlete__image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: var(--gap-section) auto;
+    border-radius: 5px;
+}
+
+.athlete__bio-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__sport-category-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__birth-date-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__nationality-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__career-titles-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__bio,
+.athlete__sport-category,
+.athlete__birth-date,
+.athlete__nationality,
+.athlete__career-titles,
+.athlete__position-role {
+    margin-bottom: var(--gap);
+}
+
+.athlete__stats, 
+.athlete__timeline {
+    margin-top: var(--gap-section);
+    border-top: 1px solid var(--color-highlight);
+    padding-top: var(--gap);
+}
+
+.athlete__stats-item,
+.athlete__timeline-item {
+    margin-bottom: var(--gap);
+    color: var(--color-highlight);
+    font-weight: bold;
+}
