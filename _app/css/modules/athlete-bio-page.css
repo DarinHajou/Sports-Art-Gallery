@@ -1,7 +1,7 @@
 .athlete-bio-page {
     font-family: var(--font-main);
     background-color: var(--color-foreground);
-    color: var(--color-background);
+    /* color: var(--color-background); */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -29,6 +29,7 @@
     margin-bottom: var(--gap);
     color: var(--color-highlight);
     font-family: var(--font-secondary);
+    text-align: center;
 }
 
 .athlete__image {
@@ -38,6 +39,46 @@
     display: block;
     margin: var(--gap-section) auto;
     border-radius: 5px;
+}
+
+.athlete__bio-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__sport-category-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__birth-date-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__nationality-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.athlete__career-titles-label {
+    font: var(--font-secondary);
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .athlete__bio,
