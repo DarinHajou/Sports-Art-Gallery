@@ -105,6 +105,7 @@ function displayAthleteDetails(athleteData) {
         statItem.textContent = `${stat.statName}: ${stat.statValue}`;
         athleteStats.appendChild(statItem);
     });
+    console.log('athleteContainer:', athleteContainer);
 
     // Display athlete's career timeline dynamically
     const athleteTimeline = athleteContainer.querySelector('.athlete__timeline');
