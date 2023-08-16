@@ -20,10 +20,6 @@ export default {
                 maxLength: 96,
             },
             description: 'This is used to set up the URL for each sport.',
-            validation: Rule => Rule.required().error('A slug for the sport is required.').custom(slug => {
-                // Check if slug is unique, return true if it's unique, else return an error message.
-                // Ensures SEO-friendly URLs for sport categories.
-             }) 
         },
         {
             name: 'description',

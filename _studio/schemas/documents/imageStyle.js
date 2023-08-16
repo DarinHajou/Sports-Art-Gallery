@@ -20,10 +20,6 @@ export default {
                 maxLength: 200,
             },
             description: 'Slug for the image style',
-            validation: Rule => Rule.required().error('A slug for the image style is required.').custom(slug => {
-                // Check if slug is unique, return true if it's unique, else return an error message.
-                // To ensure unique URLs for image styles.
-             }) 
         },
         {
             name: 'description',
