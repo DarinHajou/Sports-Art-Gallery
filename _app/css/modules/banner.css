@@ -12,6 +12,18 @@
 	padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
 }
 
+.banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px; /* adjust based on your desired fade height */
+    background: linear-gradient(to bottom, rgba(15,24,31,0) 10%, rgba(255,255,255,1) 100%);
+    pointer-events: none;
+    z-index: 2;
+}
+
 /* 
   The .banner__slide class styles each individual slide within the banner. Slides are positioned 
   on top of each other using absolute positioning, and are by default fully transparent (opacity: 0), 
