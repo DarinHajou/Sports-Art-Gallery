@@ -119,7 +119,7 @@ ul {
 }
 
 /* Styles for larger screens */
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
 	.header__nav {
 		position: static; /* It will follow the normal document flow */
 		width: auto;  /* The nav will take up only as much width as needed */
