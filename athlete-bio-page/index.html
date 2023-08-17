@@ -12,6 +12,51 @@
 	</head>
 
 	<body class="athlete-bio-page">
+		<header class="header">
+			<div class="header__logo">
+				<a href="/index.html">
+					<img src="/_app/assets/logo/Logo.png" alt="Sports Art Gallery Logo">
+				</a>
+			</div>
+
+			<div class="header__search">
+				<button class="search-icon" aria-label="open search">
+					<i class="fas fa-search"></i>
+				</button>
+
+				<div class="search-input">
+					<input 
+						type="search" 
+						id="site-search" 
+						name="q" 
+						aria-label="search through site content" 
+						placeholder="search athletes & styles">
+                    <label for="site-search" class="visually-hidden">Search</label>
+				</div>
+            </div>
+
+                <button class="header__menu-button" aria-label="open navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            <nav class="header__nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#explore" aria-label="Navigate to explore page">Explore</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#transformations" aria-label="Navigate to transformations page">Transformations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about" aria-label="Navigate to about us page">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contact" aria-label="Navigate to contact us page">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+		</header>
+		
         <main class="main">
 			<div class="athlete">
 				<h1 class="athlete__name">Athlete Name Placeholder</h1>
