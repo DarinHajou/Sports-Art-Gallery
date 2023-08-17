@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"  
+  publish = "dist"
+  
+[context.production.environment]
+  SANITY_API_ENDPOINT = "https://f8mgefqx.api.sanity.io/v1/data/query/production"
+
+[build.environment]
+  SANITY_API_ENDPOINT = "https://f8mgefqx.api.sanity.io/v1/data/query/production"
