@@ -2,7 +2,6 @@
 This is the basic grid layout for the site. It divides the content into 12 equal columns. 
 The gap variable can be changed to adjust the space between columns. This structure helps with the design consistency across different parts of the site 
 */
-
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -17,7 +16,6 @@ The gap variable can be changed to adjust the space between columns. This struct
  For large screens (1024px and above), it will have 4 columns.
  These media queries ensures that the grid adapts to the screen size, providing a responsive layout.
  */
-
  @media (max-width: 767px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -39,7 +37,6 @@ The gap variable can be changed to adjust the space between columns. This struct
  /* 
  Grid column classes for how many columns an element spans 
  */
-
  .grid__column--1 { grid-column-end: span 1; }
  .grid__column--2 { grid-column-end: span 2; }
  .grid__column--3 { grid-column-end: span 3; }

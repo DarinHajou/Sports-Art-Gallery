@@ -17,7 +17,7 @@
  .footer__logo img {
     width: 100%;
     max-width: 200px;
-    margin: 0 auto; /* Center align the logo horizontally */
+    margin: 0 auto;
     height: auto;
     background-color: #fff;
 }
