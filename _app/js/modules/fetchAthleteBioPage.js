@@ -1,4 +1,5 @@
 import { sanity } from "../sanity.js";
+// import { SANITY_API_ENDPOINT } from "../config/env.js";
 
 /**
  * Fetch specific athlete's bio data from the database.

@@ -1,12 +1,11 @@
 .athlete-bio-page {
     font-family: var(--font-secondary);
     background-color: var(--color-foreground);
-    /* color: var(--color-background); */
     margin: 0;
     padding: 0;
-    margin: 0 auto; /* Horizontally center content */
+    margin: 0 auto;
     line-height: 1.6;
-    text-align: center; /* Center text within the container */
+    text-align: center;
     min-height: 100vh;
 }
 
