@@ -1,113 +1,108 @@
-Sprint 1 Goals:
-•	Create a prototype using Figma.
-•	Set up the project folder structure and development environment.
-•	Create the initial repository in GitHub.
+### 🚀 **Sprint 1 Goals:**
+- **Prototype Creation:** Develop a functional prototype using Figma.
+- **Environment Setup:** Initialize the project folder structure and development environment.
+- **Repository Initialization:** Create and set up the initial repository on GitHub.
 
-Sprint 2 Goals:
-•	Build a basic structure of the landing page with HTML.
-•	Prepare the sports legends images for transformation using Midjourney bot.
-•	Apply CSS styles to make the layout visually appealing.
-•	Review the design and make improvements based on feedback.
-•	Add some interactive features using JavaScript.
+### 🚀 **Sprint 2 Goals:**
+- **Landing Page Structure:** Construct the basic structure of the landing page using HTML.
+- **Image Preparation:** Get sports legends images ready for transformation via the Midjourney bot.
+- **Visual Design:** Implement CSS styles to enhance the layout's visual aspect.
+- **Design Review:** Iterate on the design based on feedback, making necessary improvements.
+- **Interactivity:** Integrate interactive features leveraging JavaScript.
 
-Sprint 3 Goals:
-•	Set up Sanity Studio and create content schemas.
-•	Fetch and display content from sanity to the website.
-•	Integrate the image transformation feature using Midjourney bot.
-•	Adjust design elements and ensure responsiveness on all browsers and screen-size.
+### 🚀 **Sprint 3 Goals:**
+- **Sanity Studio Setup:** Initialize Sanity Studio and define content schemas.
+- **Content Display:** Fetch content from Sanity and display it on the website.
+- **Image Transformation Integration:** Incorporate the Midjourney bot for image transformation features.
+- **Design & Responsiveness:** Refine design elements, ensuring cross-browser compatibility and responsiveness across all screen sizes.
 
-Sprint 4 Goals:
-•	Test and debug the website to fix any issues.
-•	Improve the HTML, CSS, and JavaScript code based on testing results.
-•	Prepare and finalize documentation, including a detailed README file.
+🏃‍♂️ **Sprint 1: Project Initialization and Design Setup**
+🎯 **Goals**
+Create a prototype using Figma to visualize the layout and design of the landing page.
+Set up the project folder structure and development environment.
+Create the initial repository in GitHub for version control and collaboration.
 
+🚀 **Progress**
+During this sprint, I focused on laying the foundation for the project and getting started with the design phase.
 
-Sprint 1 Goals Response:
+1. **Research and Data Collection**
+Gathered a variety of high-quality images depicting sports legends.
+Drafted the project's goals, objectives, deliverables, and an initial MVP document.
 
-1.	Introduction
+2. **Visual Design**
+Created wireframes and mockups of the gallery and athlete biography pages using Figma.
+Finalized the layout, color scheme, and branding.
 
-This was the first of a total 4 sprints, and the first sprint is all about getting started with the prototype using Figma. After the design mockup was completed, I started with setting up the project structure and creating the initial repository, this took about a week or so.
+3. **Project Setup**
+Established the project folder structure to organize files and assets.
+Created the initial GitHub repository for version control and collaboration.
 
-2. Work Completed
+🚧 **Challenges**
+Learning Figma for the first time, leading to some initial difficulties in creating the prototype.
+Managing project structure and version control effectively within GitHub.
 
-During this sprint I had two main goals in mind. Firstly, I created the mockup design in Figma, and secondly, I set up the project folder structure.
+🎓 **Lessons Learned**
+The importance of allocating sufficient time for learning and becoming proficient in new tools like Figma.
+The value of clear project structure and version control practices for efficient collaboration.
 
-• Created the wireframes for the landing page layout, including the header, banner, gallery and latest transformation section.
+🏃‍♂️ **Sprint 2: Frontend Development and Basic Styling**
+🎯 **Goals**
+Build a basic structure of the landing page using HTML.
+Prepare the sports legends images for transformation using the Midjourney bot.
+Apply CSS styles to make the layout visually appealing and responsive.
+Review the design and make improvements based on feedback.
+Add interactive features using JavaScript to enhance user experience.
 
-• Defined the CSS variables for fonts, colors and spaces to ensure consistent styling throughout the website.
+🚀 **Progress**
+In this sprint, I focused on turning the design into a functional website with initial styling and interactivity.
 
-• Implemented the HTML structure for the landing page components based on the wireframes.
+1. **Frontend Implementation**
+Constructed the HTML structure for the landing page, with a focus on the header and banner sections.
+Initialized the npm environment for smoother integration of tools and libraries.
 
-3. Challenges Faced
+2. **Image Preparation**
+Prepared the sports legends images for transformation using the Midjourney bot.
 
-I faced quite a few challenges with the Figma design during this sprint. Since I didn't have prior experience with Figma, creating a prototype was more time-consuming and difficult than I expected. I spent a lot of valuable time trying to figure out how it works, and it's clear to me that I have room to grow in this area. The one-day introduction was not sufficient for grasping the complexity of the software, leading to struggles and delays in the design process. This experience has motivated me to work on improving my skills with Figma in the future.
+3. **CSS Styling**
+Applied CSS styles to create a visually appealing layout for the landing page.
+Ensured mobile-first design and implemented media queries for responsive adaptation.
 
-4. Lessons Learned
+4. **Interaction Enhancement**
+Incorporated JavaScript to introduce interactive features, enhancing user engagement.
 
-• I learned just how important it is to have enough time and the right tools when you're learning something new, like Figma in this case.
+🚧 **Challenges**
+Deciding on the optimal branching strategy for version control.
+Making design decisions, such as switching from layout grid to flexbox for better design flexibility.
+Merging and version control practices within GitHub.
+Balancing Figma usage for design mockups with project development.
 
-• I also found out that seeking help from other sources and peers can make a big difference, especially when official training falls short.
+🎓 **Lessons Learned**
+Finding the right balance between workflow best practices and personal comfort level for version control.
+Flexibility in design decisions based on project needs and user experience.
+Paying attention to merging strategies and version control details.
+Prioritizing a robust prototype in Figma to minimize uncertainties during development.
 
-• Despite the challenges I faced with Figma, they've only motivated me to improve. I know I have some growing to do in this area, and I'm committed to working on it for the future sprints.
+🏃‍♂️ **Sprint 3: Sanity Studio Integration and Image Processing**
+🎯 **Goals**
+- **Sanity Studio Setup:** Initialize and set up Sanity Studio for content management.
+- **Content Display:** Fetch content from Sanity and seamlessly display it on the website.
+- **Image Transformation Integration:** Integrate the Midjourney bot for image transformation features.
+- **Design & Responsiveness:** Enhance design elements to ensure cross-device and cross-browser compatibility.
 
+🚀 **Progress**
+This sprint focused on integrating the transformed athlete images and establishing a solid connection with Sanity for content management.
 
-Sprint 2 Goals Response:
+1. **Midjourney Image Processing**
+   - Delved into the Midjourney Discord bot, understanding its features.
+   - Successfully transformed athlete images into captivating art styles.
 
-1. Introduction
-Sprint 2 was all about moving from designs in Figma to actually setting up the website's foundational structure. This sprint primarily focused on the establishment of the HTML structure for the landing page, along with the basic styling and interactivity elements.
+2. **Sanity Integration**
+   - Designed and implemented schemas in Sanity tailored to the project's needs.
+   - Managed to fetch and display the transformed images and athlete biographies on the website.
 
-2. Work Completed
+🚧 **Challenges**
+Creating schemas in Sanity was a bit challenging, especially deciding their logical order. I faced a setback when I lost data from some schemas after renaming them, which consumed valuable time. Retrieving data for the athlete bio page was also tougher than expected.
 
-• Established the HTML structure for the landing page, paying particular attention to the header and banner sections.
-
-• Integrated the environment setup with defined CSS variables, ensuring consistency for fonts, spaces, and colors across the website.
-
-• Initialized the npm environment, laying the groundwork for future development and facilitating smoother integration of various tools and  libraries.
-
-• Accomplished mobile-first styling for the header and banner, followed by media queries for larger screen adaptations.
-
-• Injected interactivity into the header and banner using JavaScript, enhancing the user experience.
-
-3. Challenges Faced
-
-• Branching Strategy: I had trouble figuring out the best way to work on the header. It was hard deciding on the detail level for my tasks and commits made me understand that I've got more to learn about workflows. Thankfully, I settled on a method that feels right.
-
-• Design Decisions: Initially, I dived in using a layout grid. However, after some reflection, I switched to flex because it felt more manageable for my design.
-
-• Merging: I began merging without squashing commits. Instead of backtracking, I kept it consistent and continued with this approach. I'll be keeping an eye on this in my future projects.
-
-• Figma Issues: The bulk of my struggles were with Figma. My prototype didn't have all the details I wanted. This was a result of not giving Figma the attention it deserved earlier in the semester, particularly during side projects.
-
-4. Lessons Learned
-
-• Workflow Decisions: While deciding on my branching strategy, I realized that defining a workflow isn't just about following best practices. It's also about understanding the granularity of my work and striking a balance. It's essential to ensure that the workflow aligns with the project's needs and my personal comfort level.
-
-• Design Decisions: Shifting from the layout grid to flex was a testament to the fact that sometimes, initial design decisions might need to be revisited. Even though the grid offers a structured layout, the flexibility of flexbox seemed more apt for my project. This taught me the importance of being adaptable in my design decisions.
-
-• Merging Strategies: I overlooked squashing commits before merging, as instructed by our teacher. This oversight was a reminder: while being consistent is key, it's also vital to be aware of version control tools and strategies. I've tuned into these details more, hoping for smoother sailings in future projects.
-
-• Prototyping and its Challenges: The issues I faced with Figma were a wake-up call. It emphasized the importance of having a robust blueprint before diving into coding. While I tried to bridge the gaps between my Figma prototype and the actual website, it was clear that having a well-structured prototype could save time and reduce uncertainties during development.
-
-Retrospective
-
-1. What went well?
-
-• Somewhat successful transition from Figma prototype to actual coding.
-• Successful setup of npm environment.
-• Application of mobile-first design and the inclusion of interactivity using JavaScript.
-• Overcame challenges in workflow decisions and adapted design choices as necessary.
-
-2. What could be improved?
-
-• More focus on prototyping in Figma to reduce uncertainties in actual development.
-• Better understanding and application of Git strategies, such as squash and merge.
-• More attention to planning to ensure smoother project progression.
-
-3. What will I commit to improve in the next sprint?
-
-• Allocate more time for learning and mastering tools like Figma.
-• Continue learning Git strategies and workflows for better version control.
-• Prioritize simplicity in design and coding to maintain clarity and efficiency.
-
-Final note:
-My project was pretty ambitious, but I tried to keep both the design and code straightforward. This whole experience taught me that when planning a project, sometimes simplicity can be more impactful than going too complex.
+🎓 **Lessons Learned**
+- Proper time allocation is essential, especially when dealing with database integrations and manual data inputs.
+- Before jumping into schema creation, it's crucial to have a clear plan about their logical sequence to avoid complications.
