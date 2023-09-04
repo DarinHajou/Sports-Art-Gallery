@@ -104,9 +104,9 @@ export default {
                     type: 'object',
                     fields: [
                         {
-                            name: 'date',
-                            type: 'date',
-                            title: 'Date'
+                            name: 'year',
+                            type: 'number',
+                            title: 'year'
                         },
                         {
                             name: 'event',

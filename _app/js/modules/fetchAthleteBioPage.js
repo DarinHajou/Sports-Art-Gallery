@@ -46,7 +46,7 @@ export default async function fetchAthleteBioPage(athleteId) {
             statValue
         },
         careerTimeline[]{
-            date,
+            year,
             event
         }
     }[0]`; // We add [0] at the end to get the first item, assuming IDs are unique.
@@ -109,12 +109,12 @@ function displayAthleteDetails(athleteData) {
     console.log('athleteContainer:', athleteContainer);
 
     // Display athlete's career timeline dynamically
-    const athleteTimeline = athleteContainer.querySelector('.athlete__timeline');
+    const athleteTimeline = athleteContainer.querySelector('.athlete__timeline [data-content]');
     athleteTimeline.innerHTML = ''; // Clear any existing items
     athleteData.careerTimeline.forEach(eventItem => {
         const timelineItem = document.createElement('p');
         timelineItem.classList.add('athlete__timeline-item');
-        timelineItem.textContent = `${eventItem.date}: ${eventItem.event}`;
+        timelineItem.textContent = `${eventItem.year}: ${eventItem.event}`;
         athleteTimeline.appendChild(timelineItem);
     });
 }
