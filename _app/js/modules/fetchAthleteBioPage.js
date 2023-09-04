@@ -90,15 +90,15 @@ function displayAthleteDetails(athleteData) {
     athleteNationality.textContent = athleteData.nationality;
 
     // Display athlete's career titles
-    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles [data-content');
-    athleteCareerTitles.textContent = athleteData.careerTitles;
+    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles-list[data-content]');
+    athleteCareerTitles.innerHTML = athleteData.careerTitles.map(title => `<li>${title}</li>`).join('');
 
     // Display athlete's position or role
-    const athletePositionRole = athleteContainer.querySelector('.athlete__position-role');
+    const athletePositionRole = athleteContainer.querySelector('.athlete__position-role [data-content]');
     athletePositionRole.textContent = athleteData.positionOrRole;
 
     // Display athlete's stats dynamically
-    const athleteStats = athleteContainer.querySelector('.athlete__stats');
+    const athleteStats = athleteContainer.querySelector('.athlete__stats [data-content]');
     athleteStats.innerHTML = ''; // Clear any existing items
     athleteData.stats.forEach(stat => {
         const statItem = document.createElement('p');

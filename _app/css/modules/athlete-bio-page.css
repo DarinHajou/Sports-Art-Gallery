@@ -40,6 +40,11 @@
     border-radius: 5px;
 }
 
+.athlete__bio {
+    font-size: 20px;
+
+}
+
 .athlete__bio-label {
     font: var(--font-secondary);
     font-weight: bold;
@@ -78,6 +83,17 @@
     color: #333;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+.athlete__career-titles-list {
+    list-style: none;
+  }
+
+.athlete__timeline-label {
+    font-weight: bold;
+}
+
+.athlete__stats-label {
+    font-weight: bold;
 }
 
 .athlete__bio,
