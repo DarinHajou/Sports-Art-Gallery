@@ -23,14 +23,6 @@
     padding: var(--gap);
 }
 
-.athlete__name {
-    font-size: 2rem;
-    margin-bottom: var(--gap);
-    color: var(--color-highlight);
-    font-family: var(--font-secondary);
-    text-align: center;
-}
-
 .athlete__image {
     width: 100%;
     max-width: 400px;
