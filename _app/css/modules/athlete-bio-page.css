@@ -34,11 +34,9 @@
 
 .athlete__bio {
     font-size: 20px;
-
 }
 
 .athlete__bio-label {
-    font: var(--font-secondary);
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
@@ -46,7 +44,6 @@
 }
 
 .athlete__sport-category-label {
-    font: var(--font-secondary);
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
@@ -54,7 +51,6 @@
 }
 
 .athlete__birth-date-label {
-    font: var(--font-secondary);
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
@@ -62,7 +58,6 @@
 }
 
 .athlete__nationality-label {
-    font: var(--font-secondary);
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
@@ -70,7 +65,6 @@
 }
 
 .athlete__career-titles-label {
-    font: var(--font-secondary);
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
