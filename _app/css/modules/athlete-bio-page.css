@@ -38,35 +38,30 @@
 
 .athlete__bio-label {
     font-weight: bold;
-    color: var(--color-highlight);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .athlete__sport-category-label {
     font-weight: bold;
-    color: var(--color-highlight);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .athlete__birth-date-label {
     font-weight: bold;
-    color: var(--color-highlight);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .athlete__nationality-label {
     font-weight: bold;
-    color: var(--color-highlight);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .athlete__career-titles-label {
     font-weight: bold;
-    color: var(--color-highlight);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -76,12 +71,10 @@
 
 .athlete__timeline-label {
     font-weight: bold;
-    color: var(--color-highlight);
 }
 
 .athlete__stats-label {
     font-weight: bold;
-    color: var(--color-highlight);
 }
 
 .athlete__bio,
