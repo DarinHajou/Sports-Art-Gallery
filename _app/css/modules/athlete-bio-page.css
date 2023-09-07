@@ -71,10 +71,14 @@
 
 .athlete__timeline-label {
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .athlete__stats-label {
-    font-weight: bold;|
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .athlete__bio,
