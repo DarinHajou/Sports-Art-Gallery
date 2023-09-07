@@ -74,7 +74,7 @@
 }
 
 .athlete__stats-label {
-    font-weight: bold;
+    font-weight: bold;|
 }
 
 .athlete__bio,
@@ -84,16 +84,19 @@
     margin-bottom: var(--gap);
 }
 
-.athlete__stats, 
-.athlete__timeline,
-.athlete__career-titles-label {
-    margin-top: var(--gap-section);
-    border-top: 1px solid var(--color-highlight);
-    padding-top: var(--gap);
-}
+    .athlete__stats, 
+    .athlete__timeline,
+    .athlete__career-titles-label {
+        margin-top: var(--gap-section);
+        border-top: 1px solid var(--color-highlight);
+        padding-top: var(--gap);
+    }
 
 .athlete__stats-item,
-.athlete__timeline-item {
+.athlete__timeline-item,
+.athlete__career-titles-list,
+.athlete__career-titles-list li {
     margin-bottom: var(--gap);
+    margin-top: var(--gap);
     font-weight: bold;
 }
