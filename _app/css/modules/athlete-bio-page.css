@@ -85,7 +85,8 @@
 }
 
 .athlete__stats, 
-.athlete__timeline {
+.athlete__timeline,
+.athlete__career-titles-label {
     margin-top: var(--gap-section);
     border-top: 1px solid var(--color-highlight);
     padding-top: var(--gap);
