@@ -12,7 +12,7 @@
 .main {
     margin: 40px auto;
     padding: var(--gap-section);
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     background-color: var(--color-background);
     border-radius: 5px;
