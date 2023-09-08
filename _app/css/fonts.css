@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Saira+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
 
 :root {
     --font-main: 'Montserrat', sans-serif;
-    --font-secondary: 'Cormorant Garamond', serif;
+    --font-secondary:'Merriweather Sans', sans-serif;
     --font-tertiary: 'Oswald', sans-serif;
     --font-banner: 'Saira Condensed', sans-serif;
 }

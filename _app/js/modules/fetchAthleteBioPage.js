@@ -46,7 +46,7 @@ export default async function fetchAthleteBioPage(athleteId) {
             statValue
         },
         careerTimeline[]{
-            date,
+            year,
             event
         }
     }[0]`; // We add [0] at the end to get the first item, assuming IDs are unique.
@@ -90,15 +90,15 @@ function displayAthleteDetails(athleteData) {
     athleteNationality.textContent = athleteData.nationality;
 
     // Display athlete's career titles
-    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles [data-content');
-    athleteCareerTitles.textContent = athleteData.careerTitles;
+    const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles-list[data-content]');
+    athleteCareerTitles.innerHTML = athleteData.careerTitles.map(title => `<li>${title}</li>`).join('');
 
     // Display athlete's position or role
-    const athletePositionRole = athleteContainer.querySelector('.athlete__position-role');
+    const athletePositionRole = athleteContainer.querySelector('.athlete__position-role [data-content]');
     athletePositionRole.textContent = athleteData.positionOrRole;
 
     // Display athlete's stats dynamically
-    const athleteStats = athleteContainer.querySelector('.athlete__stats');
+    const athleteStats = athleteContainer.querySelector('.athlete__stats [data-content]');
     athleteStats.innerHTML = ''; // Clear any existing items
     athleteData.stats.forEach(stat => {
         const statItem = document.createElement('p');
@@ -109,12 +109,12 @@ function displayAthleteDetails(athleteData) {
     console.log('athleteContainer:', athleteContainer);
 
     // Display athlete's career timeline dynamically
-    const athleteTimeline = athleteContainer.querySelector('.athlete__timeline');
+    const athleteTimeline = athleteContainer.querySelector('.athlete__timeline [data-content]');
     athleteTimeline.innerHTML = ''; // Clear any existing items
     athleteData.careerTimeline.forEach(eventItem => {
         const timelineItem = document.createElement('p');
         timelineItem.classList.add('athlete__timeline-item');
-        timelineItem.textContent = `${eventItem.date}: ${eventItem.event}`;
+        timelineItem.textContent = `${eventItem.year}: ${eventItem.event}`;
         athleteTimeline.appendChild(timelineItem);
     });
 }
