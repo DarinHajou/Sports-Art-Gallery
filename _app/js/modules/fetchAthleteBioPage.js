@@ -92,9 +92,9 @@ function displayAthleteDetails(athleteData) {
     // Display athlete's career titles
     const athleteCareerTitles = athleteContainer.querySelector('.athlete__career-titles-list[data-content]');
     athleteCareerTitles.innerHTML = athleteData.careerTitles.map(title => `
-    <li class="title-item">
-        <i class="fas fa-trophy"></i>
-        <span class="title-description">${title}</span>
+    <li class="athlete__title-item">
+        <i class="athlete__title-icon fas fa-trophy"></i>
+        <span class="athlete__title-description">${title}</span>
     </li>`).join('');
 
     // Display athlete's position or role
@@ -133,7 +133,7 @@ export function loadAndDisplayAthleteBioPage(athleteId) {
         });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Extract the athlete ID from the URL
     const urlParams = new URLSearchParams(window.location.search);
     const athleteId = urlParams.get('id');
