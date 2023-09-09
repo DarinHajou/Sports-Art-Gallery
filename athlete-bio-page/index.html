@@ -1,120 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Athlete Bio - Sport Gallery</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="../_app/css/main.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-		<script type="module" src="../_app/js/main.js"></script>
-	</head>
+	<title>Athlete Bio - Sport Gallery</title>
 
-	<body class="athlete-bio-page">
-		<header class="header">
-			<div class="header__logo">
-				<a href="/index.html">
-					<img src="/_app/assets/logo/Logo.png" alt="Sports Art Gallery Logo">
-				</a>
+	<link rel="stylesheet" href="../_app/css/main.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+	<script type="module" src="../_app/js/main.js"></script>
+</head>
+
+<body class="athlete-bio-page">
+	<header class="header">
+		<div class="header__logo">
+			<a href="/index.html">
+				<img src="/_app/assets/logo/Logo.png" alt="Sports Art Gallery Logo">
+			</a>
+		</div>
+
+		<div class="header__search">
+			<button class="search-icon" aria-label="open search">
+				<i class="fas fa-search"></i>
+			</button>
+
+			<div class="search-input">
+				<input type="search" id="site-search" name="q" aria-label="search through site content"
+					placeholder="search athletes & styles">
+				<label for="site-search" class="visually-hidden">Search</label>
+			</div>
+		</div>
+
+		<button class="header__menu-button" aria-label="open navigation menu">
+			<i class="fas fa-bars"></i>
+		</button>
+
+		<nav class="header__nav" role="navigation" aria-label="Main navigation">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" href="#explore" aria-label="Navigate to explore page">Explore</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#transformations"
+						aria-label="Navigate to transformations page">Transformations</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#about" aria-label="Navigate to about us page">About</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#contact" aria-label="Navigate to contact us page">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="athlete">
+			<h1 class="athlete__name">Athlete Name Placeholder</h1>
+
+			<img class="athlete__image" src="#" alt="Athlete's image">
+
+			<p class="athlete__sport-category">
+				<span class="athlete__sport-category-label">Sport Category:</span>
+				<span data-content="Sport Category Placeholder"></span>
+			</p>
+
+			<p class="athlete__birth-date">
+				<span class="athlete__birth-date-label">Birth Date:</span>
+				<span data-content="Birth Date Placeholder"></span>
+			</p>
+
+			<p class="athlete__nationality">
+				<span class="athlete__nationality-label">Nationality:</span>
+				<span data-content="Nationality Placeholder"></span>
+			</p>
+
+			<p class="athlete__position-role">
+				<span class="athlete__position-role-label">Position or Role:</span>
+				<span data-content="Position or Role Placeholder"></span>
+			</p>
+
+			<p class="athlete__bio">
+				<span class="athlete__bio-label">Athlete Bio:</span>
+				<span data-content="Athlete Bio Placeholder"></span>
+			</p>
+
+			<p class="athlete__career-titles-label">Career Titles</p>
+
+			<ul class="athlete__career-titles-list" data-content="Career Titles Placeholder"></ul>
+
+			<p class="athlete__timeline">
+				<span class="athlete__timeline-label">Timeline:</span>
+				<span data-content="Timeline Placeholder"></span>
+			</p>
+
+			<p class="athlete__stats">
+				<span class="athlete__stats-label">Career Stats:</span>
+				<span data-content="Career Stats Placeholder"></span>
+			</p>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<img src="/_app/assets/logo/Logo.png" alt="Sports Art Gallery Logo">
 			</div>
 
-			<div class="header__search">
-				<button class="search-icon" aria-label="open search">
-					<i class="fas fa-search"></i>
-				</button>
-
-				<div class="search-input">
-					<input 
-						type="search" 
-						id="site-search" 
-						name="q" 
-						aria-label="search through site content" 
-						placeholder="search athletes & styles">
-                    <label for="site-search" class="visually-hidden">Search</label>
-				</div>
-            </div>
-
-                <button class="header__menu-button" aria-label="open navigation menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-            <nav class="header__nav" role="navigation" aria-label="Main navigation">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#explore" aria-label="Navigate to explore page">Explore</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#transformations" aria-label="Navigate to transformations page">Transformations</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#about" aria-label="Navigate to about us page">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#contact" aria-label="Navigate to contact us page">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-		</header>
-		
-        <main class="main">
-			<div class="athlete">
-				<h1 class="athlete__name">Athlete Name Placeholder</h1>
-
-				<img class="athlete__image" src="#" alt="Athlete's image">
-
-				<p class="athlete__sport-category"><span class="athlete__sport-category-label">Sport Category:</span> <span data-content="Sport Category Placeholder"></span></p>
-
-				<p class="athlete__birth-date"><span class="athlete__birth-date-label">Birth Date:</span> <span data-content="Birth Date Placeholder"></span></p>
-
-				<p class="athlete__nationality"><span class="athlete__nationality-label">Nationality:</span> <span data-content="Nationality Placeholder"></span></p>
-				
-				<p class="athlete__position-role"><span class="athlete__position-role-label">Position or Role:</span> <span data-content="Position or Role Placeholder"></span></p>				
-
-				<p class="athlete__bio"><span class="athlete__bio-label">Athlete Bio:</span> <span data-content="Athlete Bio Placeholder"></span></p>
-				
-				<p class="athlete__career-titles-label">Career Titles</p><ul class="athlete__career-titles-list" data-content="Career Titles Placeholder"></ul>
-								
-				<p class="athlete__timeline"><span class="athlete__timeline-label">Timeline:</span> <span data-content="Timeline Placeholder"></span></p>
-				
-				<p class="athlete__stats"><span class="athlete__stats-label">Career Stats:</span> <span data-content="Career Stats Placeholder"></span></p>
-			</div>			
-           
-		</main>
-
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__logo">
-					<img src="/_app/assets/logo/Logo.png" alt="Sports Art Gallery Logo">
-				</div>
-				
-				<div class="footer__links">
-					<ul class="footer__list">
-						<li class="footer__item">
-							<a class="footer__link" href="#explore" aria-label="Navigate to explore page">Explore</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="#transformations" aria-label="Navigate to transformations page">Transformations</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="#about" aria-label="Navigate to about us page">About</a>
-						</li>
-						<li class="footer__item">
-							<a class="footer__link" href="#contact" aria-label="Navigate to contact us page">Contact</a>
-						</li>
-					</ul>
-				</div>
+			<div class="footer__links">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#explore" aria-label="Navigate to explore page">Explore</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#transformations"
+							aria-label="Navigate to transformations page">Transformations</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#about" aria-label="Navigate to about us page">About</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#contact" aria-label="Navigate to contact us page">Contact</a>
+					</li>
+				</ul>
 			</div>
-			
-			<div class="footer__bottom">
-				<p class="footer__text">Sports Art Gallery &copy; 2023. All rights reserved.</p>
-				<div class="footer__social-icons">
-					<a href="#" class="footer__social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="footer__social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="footer__social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-					<a href="#" class="footer__social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-				</div>
+		</div>
+
+		<div class="footer__bottom">
+			<p class="footer__text">Sports Art Gallery &copy; 2023. All rights reserved.</p>
+			<div class="footer__social-icons">
+				<a href="#" class="footer__social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="footer__social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="footer__social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="footer__social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
 			</div>
-		</footer>
-    </body>
+		</div>
+	</footer>
+</body>
+
 </html>
