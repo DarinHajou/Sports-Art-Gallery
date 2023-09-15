@@ -107,28 +107,55 @@ function displayAthleteDetails(athleteData) {
     const athletePositionRole = athleteContainer.querySelector('.athlete__position-role [data-content]');
     athletePositionRole.textContent = athleteData.positionOrRole;
 
-    // Display athlete's stats dynamically
-    const athleteStats = athleteContainer.querySelector('.athlete__stats [data-content]');
-    athleteStats.innerHTML = ''; // Clear any existing items
-    athleteData.stats.forEach(stat => {
-        const statItem = document.createElement('p');
-        statItem.classList.add('athlete__stats-item');
-        statItem.textContent = `${stat.statName}: ${stat.statValue}`;
-        athleteStats.appendChild(statItem);
-    });
-    console.log('athleteContainer:', athleteContainer);
-
     // Display athlete's career timeline dynamically
-    const athleteTimeline = athleteContainer.querySelector('.athlete__timeline [data-content]');
+    const athleteTimeline = athleteContainer.querySelector('#athlete__timeline-list');
+    console.log('Athlete Timeline:', athleteTimeline); // Debug line
+
     athleteTimeline.innerHTML = ''; // Clear any existing items
+
     athleteData.careerTimeline.forEach(eventItem => {
-        const timelineItem = document.createElement('p');
+        console.log('Event Item:', eventItem);
+
+        const timelineItem = document.createElement('li');
         timelineItem.classList.add('athlete__timeline-item');
-        timelineItem.textContent = `${eventItem.year}: ${eventItem.event}`;
+    
+        // Create year and event span
+        const year = document.createElement('span');
+        year.classList.add('timeline-year');
+        year.textContent = eventItem.year;
+        timelineItem.appendChild(year);
+    
+        const eventSpan = document.createElement('span');
+        eventSpan.classList.add('timeline-event');
+        eventSpan.textContent = eventItem.event;
+        timelineItem.appendChild(eventSpan);
+    
+        // Create modal for extra information
+        const modal = document.createElement('div');
+        modal.classList.add('timeline-modal');
+    
+        const eventText = document.createElement('p');
+        eventText.textContent = eventItem.event;
+        modal.appendChild(eventText);
+        
+        if (eventItem.image && eventItem.image.asset) {
+            const eventImage = document.createElement('img');
+            eventImage.src = eventItem.image.asset.url;
+            eventImage.alt = `${eventItem.year} event`;
+            modal.appendChild(eventImage);
+        }
+        
+        if (eventItem.videoLink) {
+            const videoLink = document.createElement('a');
+            videoLink.href = eventItem.videoLink;
+            videoLink.textContent = 'Watch Video';
+            modal.appendChild(videoLink);
+        }
+    
+        timelineItem.appendChild(modal);
         athleteTimeline.appendChild(timelineItem);
     });
 }
-
 export function loadAndDisplayAthleteBioPage(athleteId) {
     fetchAthleteBioPage(athleteId)
         .then(athleteData => {

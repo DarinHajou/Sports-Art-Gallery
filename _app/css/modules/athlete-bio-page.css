@@ -1,3 +1,4 @@
+/* === GLOBAL STYLES === */
 .athlete-bio-page {
     font-family: var(--font-secondary);
     background-color: var(--color-foreground);
@@ -19,6 +20,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* === ATHLETE DETAILS === */
 .athlete {
     padding: var(--gap);
 }
@@ -32,6 +34,7 @@
     border-radius: 5px;
 }
 
+/* === BIO SECTION === */
 .athlete__bio {
     font-size: 20px;
 }
@@ -67,14 +70,53 @@
 }
 .athlete__career-titles-list {
     list-style: none;
-  }
+}
 
+/* === TIMELINE SECTION === */
 .athlete__timeline-label {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
+.athlete__timeline-item {
+    list-style: none;
+    position: relative;
+}
+  
+.timeline-year {
+    font-weight: bold;
+}
+
+.timeline-event {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 200px;
+    top: 0;
+    left: 100%;
+}
+
+.timeline-modal {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 200px;
+    top: 0;
+    left: 100%;
+}
+
+.athlete__timeline-item:hover .timeline-modal {
+    display: block;
+}
+
+.athlete__video-link--black {
+color: #000000;
+} 
+
+/* === STATISTICS SECTION === */
 .athlete__stats-label {
     font-weight: bold;
     text-transform: uppercase;
