@@ -47,7 +47,13 @@ export default async function fetchAthleteBioPage(athleteId) {
         },
         careerTimeline[]{
             year,
-            event
+            event,
+            videoLink,
+            image {
+                asset->{
+                    url
+                }
+            }
         }
     }[0]`; // We add [0] at the end to get the first item, assuming IDs are unique.
 
