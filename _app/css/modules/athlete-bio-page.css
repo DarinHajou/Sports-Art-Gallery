@@ -82,38 +82,43 @@
 .athlete__timeline-item {
     list-style: none;
     position: relative;
+    font-size: large;
 }
   
-.timeline-year {
+.athlete__timeline-year {
     font-weight: bold;
 }
 
-.timeline-event {
+.athlete__timeline-event {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #000000;
     border: 1px solid #ccc;
     width: 200px;
     top: 0;
     left: 100%;
 }
 
-.timeline-modal {
+.athlete__timeline-modal {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--color-foreground);
     border: 1px solid #ccc;
-    width: 200px;
+    width: 400px;
     top: 0;
-    left: 100%;
+    left: 80%;
 }
 
-.athlete__timeline-item:hover .timeline-modal {
+.athlete__timeline-item:hover {
+    color: var(--color-background);
+}
+
+.athlete__timeline-item:hover .athlete__timeline-modal {
     display: block;
 }
 
 .athlete__video-link--black {
-color: #000000;
+color: #fff;
 } 
 
 /* === STATISTICS SECTION === */
