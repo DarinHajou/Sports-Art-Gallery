@@ -149,6 +149,7 @@ function displayAthleteDetails(athleteData) {
             const videoLink = document.createElement('a');
             videoLink.href = eventItem.videoLink;
             videoLink.textContent = 'Watch Video';
+            videoLink.classList.add('athlete__video-link--black');
             modal.appendChild(videoLink);
         }
     
