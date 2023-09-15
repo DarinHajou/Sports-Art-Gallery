@@ -121,18 +121,18 @@ function displayAthleteDetails(athleteData) {
     
         // Create year and event span
         const year = document.createElement('span');
-        year.classList.add('timeline-year');
+        year.classList.add('athlete__timeline-year');
         year.textContent = eventItem.year;
         timelineItem.appendChild(year);
     
         const eventSpan = document.createElement('span');
-        eventSpan.classList.add('timeline-event');
+        eventSpan.classList.add('athlete__timeline-event');
         eventSpan.textContent = eventItem.event;
         timelineItem.appendChild(eventSpan);
     
         // Create modal for extra information
         const modal = document.createElement('div');
-        modal.classList.add('timeline-modal');
+        modal.classList.add('athlete__timeline-modal');
     
         const eventText = document.createElement('p');
         eventText.textContent = eventItem.event;
