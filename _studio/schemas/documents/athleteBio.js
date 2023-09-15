@@ -112,6 +112,16 @@ export default {
                             name: 'event',
                             type: 'string',
                             title: 'Event or Milestone'
+                        },
+                        {
+                            name: 'image',
+                            type: 'image',
+                            title: 'Event Image'
+                        },
+                        {
+                            name: 'videoLink',
+                            type: 'url',
+                            title: 'Event Video Link'
                         }
                     ],
                     name: 'careerEvent'
