@@ -156,6 +156,16 @@ function displayAthleteDetails(athleteData) {
         timelineItem.appendChild(modal);
         athleteTimeline.appendChild(timelineItem);
     });
+
+        // Display athlete's stats dynamically
+        const athleteStats = athleteContainer.querySelector('.athlete__stats [data-content]');
+        athleteStats.innerHTML = ''; // Clear any existing items
+        athleteData.stats.forEach(stat => {
+            const statItem = document.createElement('p');
+            statItem.classList.add('athlete__stats-item');
+            statItem.textContent = `${stat.statName}: ${stat.statValue}`;
+            athleteStats.appendChild(statItem);
+        });
 }
 export function loadAndDisplayAthleteBioPage(athleteId) {
     fetchAthleteBioPage(athleteId)
